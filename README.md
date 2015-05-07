@@ -40,9 +40,9 @@ project
 ------------
 
 ```javascript
-
-  cd [项目]
-  npm i
+  git clone git@github.com:ArvoGuo/normal-seed.git myproject
+  cd myproject
+  sudo npm i
   gulp init  // 初始化项目，慎重，将重置
   开启两个终端窗口
     |
@@ -69,10 +69,16 @@ project
 
 //方式二：gulp
 
-  npm i      // 安装依赖
+  sudo npm i      // 安装依赖
   gulp build // 打包
 
   // 将得到  dist 以及 dist-html 文件夹
+
+//如果需要查看打包结果的运行情况可以执行：
+
+  make server
+  //或者
+  gulp server
 
 ```
 
