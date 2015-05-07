@@ -5,22 +5,22 @@
 
 project
    |--client
-        |---assets                      //(for static resource)
-        |---html                        //(for html pages)
+        |---assets                      //(图片，音视频等资源)
+        |---html                        //(html页面)
         |---js
-            |---lib                     //(for bower)
-            |---**/*.js                 //(for other js module)
+            |---lib                     //(js类库等依赖)
+            |---**/*.js                 //(其他js模块)
         |---style
-            |---app.sass                //(for gulp-sass entry)
-            |---main.sass               //(for import other)
-            |---**.*.sass               //(for other css module)
-        |---dist                        //(build static result)
+            |---app.sass                //(gulp-sass编译入口)
+            |---main.sass               //(import所需sass)
+            |---**.*.sass               //(其他sass模块)
+        |---dist                        //(打包后生成的非页面资源)
             |---assets
             |---css
             |---js
                 |---*.js
                 |---*.min.js
-        |---dist-html                   //(build page result)
+        |---dist-html                   //(打包后生成的页面资源)
             |---**/*.html
 ```
 
