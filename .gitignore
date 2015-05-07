@@ -1,8 +1,8 @@
 node_modules
-client/css
 .DS_Store
 .sass-cache
 .tmp
 .idea
 dist
 dist-html
+client/css

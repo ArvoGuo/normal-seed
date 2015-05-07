@@ -17,10 +17,10 @@ gulp.task('build-copy', function() {
 });
 
 gulp.task('build-js', function() {
-  return gulp.src(['!dist/js/lib/**/*','dist/**/*.js'])
+  return gulp.src(['!dist/js/lib/**/*','dist/js/**/*.js'])
     .pipe(plugins.uglify())
     .pipe(plugins.rename({extname: '.min.js'}))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('build-styles', function() {
